@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import {MatToolbar} from '@angular/material/toolbar';
-import {MatIconButton} from '@angular/material/button';
-import {MatIcon} from '@angular/material/icon';
+import {SidenavComponent} from './shared/layouts/sidenav/sidenav.component';
+import {HeaderComponent} from './shared/layouts/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [MatToolbar, MatIconButton, MatIcon],
+  imports: [SidenavComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'student-lms-front';
 }
